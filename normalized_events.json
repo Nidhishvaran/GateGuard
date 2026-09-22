@@ -1,0 +1,1118 @@
+[
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067601000,
+    "message": "2026-09-22T09:00:01Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:00:01Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "5ac87d399906e3d3021e54dffa5d28d2ffdd92fdeacdaa62fad7ccf533290371",
+    "src_endpoint": {
+      "ip": "192.168.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.20",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067602000,
+    "message": "2026-09-22T09:00:02Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:00:02Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "raw_data_hash": "6bc7aa22ff2845b2da82cbd8fc65a21386346546fd9dd2e25ea416ffc08de62c",
+    "src_endpoint": {
+      "ip": "192.168.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.20",
+      "port": 22
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SSH_ALLOW",
+    "event_template": "NET_TCP_SSH_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067603000,
+    "message": "2026-09-22T09:00:03Z source=192.168.1.20 host=192.168.1.20 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:00:03Z source=192.168.1.20 host=192.168.1.20 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "ae69a43617d6dddad5dacf5bd7be1f58abc755ca061ce8accd7f22628ef24c44",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.20",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.20",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067610000,
+    "message": "2026-09-22T09:00:10Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:00:10Z source=192.168.1.10 src_ip=192.168.1.10 dst_ip=192.168.1.20 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "526c408bbab97509935398a10c8ff6079ddbb1ee4362ff793c60a4c42e15cffc",
+    "src_endpoint": {
+      "ip": "192.168.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.20",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067901000,
+    "message": "2026-09-22T09:05:01Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:05:01Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "0879af056db81e6b485f0ee4aafcfc95432067fca6cf6c3ca852dcdca1146c7a",
+    "src_endpoint": {
+      "ip": "192.168.1.11",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.21",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067902000,
+    "message": "2026-09-22T09:05:02Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:05:02Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "raw_data_hash": "1f4f8ae9c2e771b44ccc31dfb474fd161c9bd288e00bd8ce13abb938760d7de4",
+    "src_endpoint": {
+      "ip": "192.168.1.11",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.21",
+      "port": 3389
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_RDP_ALLOW",
+    "event_template": "NET_TCP_RDP_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067903000,
+    "message": "2026-09-22T09:05:03Z source=192.168.1.21 host=192.168.1.21 user=operator service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:05:03Z source=192.168.1.21 host=192.168.1.21 user=operator service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "073f0f7b67e2417d1e34615b48a62e0074afc992c4f916cee1405c2ee6fb902b",
+    "actor": {
+      "user": {
+        "name": "operator"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.21",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.21",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790067904000,
+    "message": "2026-09-22T09:05:04Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:05:04Z source=192.168.1.11 src_ip=192.168.1.11 dst_ip=192.168.1.21 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "raw_data_hash": "898b4c858b44c0a50fab8bdff1e06f5559920470b8ce27a05a1e9d8a7dbcd0a0",
+    "src_endpoint": {
+      "ip": "192.168.1.11",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.21",
+      "port": 22
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SSH_ALLOW",
+    "event_template": "NET_TCP_SSH_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068201000,
+    "message": "2026-09-22T09:10:01Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:10:01Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "raw_data_hash": "d3c56dad2dae2ba8bf941e710df7f0039e8eb29dd02f713abb8184a3eea68a50",
+    "src_endpoint": {
+      "ip": "192.168.1.12",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.22",
+      "port": 22
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SSH_ALLOW",
+    "event_template": "NET_TCP_SSH_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068202000,
+    "message": "2026-09-22T09:10:02Z source=192.168.1.22 host=192.168.1.22 user=dev service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:10:02Z source=192.168.1.22 host=192.168.1.22 user=dev service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "51609ee61c91e9033dc085e637db79bb644ca5c8c126a398f0be5d3b95038bdd",
+    "actor": {
+      "user": {
+        "name": "dev"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.22",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.22",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068205000,
+    "message": "2026-09-22T09:10:05Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=443 action=ALLOW event=NET_TCP_HTTPS_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:10:05Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=443 action=ALLOW event=NET_TCP_HTTPS_ALLOW",
+    "raw_data_hash": "46c1697628ab3052faac8e6a7f004dbb4d5dd991b14315c26df85f28abb224d5",
+    "src_endpoint": {
+      "ip": "192.168.1.12",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.22",
+      "port": 443
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_HTTPS_ALLOW",
+    "event_template": "NET_TCP_HTTPS_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068206000,
+    "message": "2026-09-22T09:10:06Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:10:06Z source=192.168.1.12 src_ip=192.168.1.12 dst_ip=192.168.1.22 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "d7452fd2838d3f936c3042d0a689d36a5039cf39afbf79dab94154436f009dcd",
+    "src_endpoint": {
+      "ip": "192.168.1.12",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.22",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068501000,
+    "message": "2026-09-22T09:15:01Z source=192.168.1.13 src_ip=192.168.1.13 dst_ip=192.168.1.23 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:15:01Z source=192.168.1.13 src_ip=192.168.1.13 dst_ip=192.168.1.23 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "raw_data_hash": "028a1073d9f451d2cba843aeffb2d5b88106567963742eb5d802796405d866ae",
+    "src_endpoint": {
+      "ip": "192.168.1.13",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.23",
+      "port": 22
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SSH_ALLOW",
+    "event_template": "NET_TCP_SSH_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 3,
+    "status_id": 2,
+    "time": 1790068502000,
+    "message": "2026-09-22T09:15:02Z source=192.168.1.23 host=192.168.1.23 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:15:02Z source=192.168.1.23 host=192.168.1.23 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "raw_data_hash": "f781ee7f2193f878521723f49bdba3b018189f831aafb9bb27fe51cbe5f95fa9",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.23",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.23",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "FAILURE",
+    "event": "AUTH_SSHD_FAILURE",
+    "event_template": "AUTH_SSHD_FAILURE"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068503000,
+    "message": "2026-09-22T09:15:03Z source=192.168.1.23 host=192.168.1.23 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:15:03Z source=192.168.1.23 host=192.168.1.23 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "3f6c3f226e450bd2bf293ef74cfd78be46ac630eb8262911e96d53b20b9139d9",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.23",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.23",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068504000,
+    "message": "2026-09-22T09:15:04Z source=192.168.1.13 src_ip=192.168.1.13 dst_ip=192.168.1.23 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:15:04Z source=192.168.1.13 src_ip=192.168.1.13 dst_ip=192.168.1.23 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "2f0ce244bc3f25db165ad17520daa82a23a2bf0c2b78b6d592dc1c881eae973e",
+    "src_endpoint": {
+      "ip": "192.168.1.13",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.23",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068801000,
+    "message": "2026-09-22T09:20:01Z source=192.168.1.14 src_ip=192.168.1.14 dst_ip=192.168.1.24 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:20:01Z source=192.168.1.14 src_ip=192.168.1.14 dst_ip=192.168.1.24 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "7f179103dfff859643eb44c638e8cddbb58df116580bc75a4657d4f5e4fe4151",
+    "src_endpoint": {
+      "ip": "192.168.1.14",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.24",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068802000,
+    "message": "2026-09-22T09:20:02Z source=192.168.1.14 src_ip=192.168.1.14 dst_ip=192.168.1.24 protocol=TCP dst_port=443 action=ALLOW event=NET_TCP_HTTPS_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:20:02Z source=192.168.1.14 src_ip=192.168.1.14 dst_ip=192.168.1.24 protocol=TCP dst_port=443 action=ALLOW event=NET_TCP_HTTPS_ALLOW",
+    "raw_data_hash": "47d2da3fdc8e99ea43687f295829c2d2588d812daa85a58f0cf0bf8b3392c92b",
+    "src_endpoint": {
+      "ip": "192.168.1.14",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.24",
+      "port": 443
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_HTTPS_ALLOW",
+    "event_template": "NET_TCP_HTTPS_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790068803000,
+    "message": "2026-09-22T09:20:03Z source=192.168.1.24 host=192.168.1.24 user=backup service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:20:03Z source=192.168.1.24 host=192.168.1.24 user=backup service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "8dee29ae3ecade80baa412e8b7aef0a1e3d4d6cb49b6ed234bf54211c9ae5b5a",
+    "actor": {
+      "user": {
+        "name": "backup"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.24",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.24",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790069101000,
+    "message": "2026-09-22T09:25:01Z source=192.168.1.15 src_ip=192.168.1.15 dst_ip=192.168.1.25 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:25:01Z source=192.168.1.15 src_ip=192.168.1.15 dst_ip=192.168.1.25 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "raw_data_hash": "ebcd9e84347a457d09c01e519c0d030bd5e9bf0ab398dd687b8224e4b973ba1d",
+    "src_endpoint": {
+      "ip": "192.168.1.15",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.25",
+      "port": 3389
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_RDP_ALLOW",
+    "event_template": "NET_TCP_RDP_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790069102000,
+    "message": "2026-09-22T09:25:02Z source=192.168.1.25 host=192.168.1.25 user=operator service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:25:02Z source=192.168.1.25 host=192.168.1.25 user=operator service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "3276a5545e2bfc0fa423950994a43df302bd34569b2223f503a6137e9d59fd96",
+    "actor": {
+      "user": {
+        "name": "operator"
+      }
+    },
+    "src_endpoint": {
+      "ip": "192.168.1.25",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.25",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790069103000,
+    "message": "2026-09-22T09:25:03Z source=192.168.1.15 src_ip=192.168.1.15 dst_ip=192.168.1.25 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T09:25:03Z source=192.168.1.15 src_ip=192.168.1.15 dst_ip=192.168.1.25 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "6cc1ef9222fdf0162126e29bb4626784e4ac1b325a14a86d11b763fa61b6f5e7",
+    "src_endpoint": {
+      "ip": "192.168.1.15",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "192.168.1.25",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790071201000,
+    "message": "2026-09-22T10:00:01Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:01Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "e9e60232a56b313e552124a8fcaca9b91899784f73e4faca4e0fb5ad59c0c682",
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790071202000,
+    "message": "2026-09-22T10:00:02Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:02Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=445 action=ALLOW event=NET_TCP_SMB_ALLOW",
+    "raw_data_hash": "fddebdbc1092800f585cee69617b1babff0235570b7b96492d93dfc86288346f",
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 445
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SMB_ALLOW",
+    "event_template": "NET_TCP_SMB_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790071203000,
+    "message": "2026-09-22T10:00:03Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:03Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=3389 action=ALLOW event=NET_TCP_RDP_ALLOW",
+    "raw_data_hash": "bf3b1d3aa870f7d6934838b57dc4fa9a7d8cb66bf22efc14bcc157af19d4c3a9",
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 3389
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_RDP_ALLOW",
+    "event_template": "NET_TCP_RDP_ALLOW"
+  },
+  {
+    "category_uid": 4,
+    "category_name": "Network Activity",
+    "class_uid": 4001,
+    "class_name": "Network Activity",
+    "activity_id": 1,
+    "activity_name": "Open",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790071204000,
+    "message": "2026-09-22T10:00:04Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:04Z source=10.10.1.10 src_ip=10.10.1.10 dst_ip=10.10.1.50 protocol=TCP dst_port=22 action=ALLOW event=NET_TCP_SSH_ALLOW",
+    "raw_data_hash": "4efd6d4f169a5dc1e20e998ae3f8504ec3de8243ec87ca9afb654f8973f814c7",
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "connection_info": {
+      "protocol_name": "TCP",
+      "direction": null
+    },
+    "traffic": {
+      "bytes": null,
+      "packets": null
+    },
+    "disposition": "ALLOW",
+    "event": "NET_TCP_SSH_ALLOW",
+    "event_template": "NET_TCP_SSH_ALLOW"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 3,
+    "status_id": 2,
+    "time": 1790071205000,
+    "message": "2026-09-22T10:00:05Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:05Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "raw_data_hash": "e01cf282b44f2993a5fd99c8378b75b790622be80cb81532786da6597abbcf50",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "FAILURE",
+    "event": "AUTH_SSHD_FAILURE",
+    "event_template": "AUTH_SSHD_FAILURE"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 3,
+    "status_id": 2,
+    "time": 1790071206000,
+    "message": "2026-09-22T10:00:06Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:06Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "raw_data_hash": "7e2874abbca88aab9ef990f4eeaeeb6f42807b0b437a9478025cfdf5373fd5c5",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "FAILURE",
+    "event": "AUTH_SSHD_FAILURE",
+    "event_template": "AUTH_SSHD_FAILURE"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 3,
+    "status_id": 2,
+    "time": 1790071207000,
+    "message": "2026-09-22T10:00:07Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:07Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "raw_data_hash": "89a2a178f97cc10d7c37efad216148c517c4d087fc9adc994de16604652ee60f",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "FAILURE",
+    "event": "AUTH_SSHD_FAILURE",
+    "event_template": "AUTH_SSHD_FAILURE"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 3,
+    "status_id": 2,
+    "time": 1790071208000,
+    "message": "2026-09-22T10:00:08Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:08Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=FAILURE event=AUTH_SSHD_FAILURE",
+    "raw_data_hash": "010c2f11cfdf839d3e084e53681f449a94851f2833a2c39aa0e4010982d889c3",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "FAILURE",
+    "event": "AUTH_SSHD_FAILURE",
+    "event_template": "AUTH_SSHD_FAILURE"
+  },
+  {
+    "category_uid": 3,
+    "category_name": "Identity & Access Management",
+    "class_uid": 3002,
+    "class_name": "Authentication",
+    "activity_id": 1,
+    "activity_name": "Logon",
+    "severity_id": 1,
+    "status_id": 1,
+    "time": 1790071209000,
+    "message": "2026-09-22T10:00:09Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "metadata": {
+      "version": "OCSF"
+    },
+    "raw_data": "2026-09-22T10:00:09Z source=10.10.1.10 host=10.10.1.50 user=admin service=sshd auth_method=password result=SUCCESS event=AUTH_SSHD_SUCCESS",
+    "raw_data_hash": "1c7ed0b07d867b417435b7592f549e54e72fc1ed61c1d4d16b45b9821f186237",
+    "actor": {
+      "user": {
+        "name": "admin"
+      }
+    },
+    "src_endpoint": {
+      "ip": "10.10.1.10",
+      "port": null
+    },
+    "dst_endpoint": {
+      "ip": "10.10.1.50",
+      "port": 22
+    },
+    "process": {
+      "name": "sshd"
+    },
+    "disposition": "SUCCESS",
+    "event": "AUTH_SSHD_SUCCESS",
+    "event_template": "AUTH_SSHD_SUCCESS"
+  }
+]

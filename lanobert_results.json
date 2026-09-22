@@ -1,0 +1,381 @@
+{
+    "model": "Custom OCSF LogBERT with Pre-Attack Early Prediction",
+    "input": "logbert_sequences.json",
+    "vocabulary": "event_vocabulary.json",
+    "threshold": 0.13211764618754387,
+    "total_sequences": 8,
+    "normal": 3,
+    "anomalous": 5,
+    "results": [
+        {
+            "sequence_id": 0,
+            "source": "192.168.1.10",
+            "sequence_type": "full_session",
+            "event_ids": [
+                6,
+                7,
+                3,
+                6
+            ],
+            "events": [
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_SSH_ALLOW",
+                "AUTH_SSHD_SUCCESS",
+                "NET_TCP_SMB_ALLOW"
+            ],
+            "anomaly_score": 0.015893399715423584,
+            "threshold": 0.13211764618754387,
+            "classification": "NORMAL",
+            "early_prediction": {
+                "stage": "NORMAL_ACTIVITY",
+                "risk_score": 0.12,
+                "early_warning": false,
+                "is_recon_pattern": false,
+                "probed_ports": [
+                    "445/SMB",
+                    "22/SSH"
+                ],
+                "predicted_attack": null,
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.91
+                    ],
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.0783
+                    ],
+                    [
+                        "AUTH_SSHD_SUCCESS",
+                        0.0052
+                    ]
+                ],
+                "summary": "Normal operational sequence conforming to baseline."
+            }
+        },
+        {
+            "sequence_id": 1,
+            "source": "192.168.1.11",
+            "sequence_type": "full_session",
+            "event_ids": [
+                6,
+                5,
+                7
+            ],
+            "events": [
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_RDP_ALLOW",
+                "NET_TCP_SSH_ALLOW"
+            ],
+            "anomaly_score": 0.03211764618754387,
+            "threshold": 0.13211764618754387,
+            "classification": "ANOMALOUS (PRE-ATTACK RECONNAISSANCE)",
+            "early_prediction": {
+                "stage": "PRE_ATTACK_RECONNAISSANCE",
+                "risk_score": 0.86,
+                "early_warning": true,
+                "is_recon_pattern": true,
+                "probed_ports": [
+                    "445/SMB",
+                    "3389/RDP",
+                    "22/SSH"
+                ],
+                "predicted_attack": "SSH_BRUTE_FORCE (AUTH_SSHD_FAILURE)",
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.9789
+                    ],
+                    [
+                        "NET_TCP_RDP_ALLOW",
+                        0.0103
+                    ],
+                    [
+                        "AUTH_SSHD_SUCCESS",
+                        0.0034
+                    ]
+                ],
+                "summary": "PREDICTED ATTACK BEFORE OCCURRENCE: Pre-attack reconnaissance detected across 445/SMB, 3389/RDP, 22/SSH. Imminent SSH brute-force attack predicted!"
+            }
+        },
+        {
+            "sequence_id": 2,
+            "source": "192.168.1.12",
+            "sequence_type": "full_session",
+            "event_ids": [
+                7,
+                3,
+                4,
+                6
+            ],
+            "events": [
+                "NET_TCP_SSH_ALLOW",
+                "AUTH_SSHD_SUCCESS",
+                "NET_TCP_HTTPS_ALLOW",
+                "NET_TCP_SMB_ALLOW"
+            ],
+            "anomaly_score": 0.0511711030267179,
+            "threshold": 0.13211764618754387,
+            "classification": "NORMAL",
+            "early_prediction": {
+                "stage": "NORMAL_ACTIVITY",
+                "risk_score": 0.12,
+                "early_warning": false,
+                "is_recon_pattern": false,
+                "probed_ports": [
+                    "445/SMB",
+                    "22/SSH"
+                ],
+                "predicted_attack": null,
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.6659
+                    ],
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.2946
+                    ],
+                    [
+                        "NET_TCP_SSH_ALLOW",
+                        0.0238
+                    ]
+                ],
+                "summary": "Normal operational sequence conforming to baseline."
+            }
+        },
+        {
+            "sequence_id": 3,
+            "source": "192.168.1.13",
+            "sequence_type": "attack_session",
+            "event_ids": [
+                7,
+                2,
+                3,
+                6
+            ],
+            "events": [
+                "NET_TCP_SSH_ALLOW",
+                "AUTH_SSHD_FAILURE",
+                "AUTH_SSHD_SUCCESS",
+                "NET_TCP_SMB_ALLOW"
+            ],
+            "anomaly_score": 2.2928195307031274,
+            "threshold": 0.13211764618754387,
+            "classification": "ANOMALOUS (SYSTEM COMPROMISE)",
+            "early_prediction": {
+                "stage": "SYSTEM_COMPROMISE",
+                "risk_score": 0.98,
+                "early_warning": false,
+                "is_recon_pattern": false,
+                "probed_ports": [
+                    "445/SMB",
+                    "22/SSH"
+                ],
+                "predicted_attack": "COMPROMISED: Attacker breached server after brute-forcing credentials.",
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.9829
+                    ],
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.0069
+                    ],
+                    [
+                        "AUTH_SSHD_SUCCESS",
+                        0.0064
+                    ]
+                ],
+                "summary": "CRITICAL BREACH: Unauthorized access achieved following brute force attack."
+            }
+        },
+        {
+            "sequence_id": 4,
+            "source": "192.168.1.14",
+            "sequence_type": "full_session",
+            "event_ids": [
+                6,
+                4
+            ],
+            "events": [
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_HTTPS_ALLOW"
+            ],
+            "anomaly_score": 0.06926263868808746,
+            "threshold": 0.13211764618754387,
+            "classification": "NORMAL",
+            "early_prediction": {
+                "stage": "NORMAL_ACTIVITY",
+                "risk_score": 0.12,
+                "early_warning": false,
+                "is_recon_pattern": false,
+                "probed_ports": [
+                    "445/SMB"
+                ],
+                "predicted_attack": null,
+                "top_next_token_predictions": [
+                    [
+                        "AUTH_SSHD_SUCCESS",
+                        0.9075
+                    ],
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.0599
+                    ],
+                    [
+                        "NET_TCP_SSH_ALLOW",
+                        0.024
+                    ]
+                ],
+                "summary": "Normal operational sequence conforming to baseline."
+            }
+        },
+        {
+            "sequence_id": 5,
+            "source": "192.168.1.15",
+            "sequence_type": "full_session",
+            "event_ids": [
+                5,
+                6
+            ],
+            "events": [
+                "NET_TCP_RDP_ALLOW",
+                "NET_TCP_SMB_ALLOW"
+            ],
+            "anomaly_score": 0.03098185732960701,
+            "threshold": 0.13211764618754387,
+            "classification": "ANOMALOUS (PRE-ATTACK RECONNAISSANCE)",
+            "early_prediction": {
+                "stage": "PRE_ATTACK_RECONNAISSANCE",
+                "risk_score": 0.86,
+                "early_warning": true,
+                "is_recon_pattern": true,
+                "probed_ports": [
+                    "445/SMB",
+                    "3389/RDP"
+                ],
+                "predicted_attack": "SSH_BRUTE_FORCE (AUTH_SSHD_FAILURE)",
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SSH_ALLOW",
+                        0.801
+                    ],
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.1446
+                    ],
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.0262
+                    ]
+                ],
+                "summary": "PREDICTED ATTACK BEFORE OCCURRENCE: Pre-attack reconnaissance detected across 445/SMB, 3389/RDP. Imminent SSH brute-force attack predicted!"
+            }
+        },
+        {
+            "sequence_id": 6,
+            "source": "10.10.1.10",
+            "sequence_type": "pre_attack_precursor",
+            "event_ids": [
+                6,
+                6,
+                5,
+                7
+            ],
+            "events": [
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_RDP_ALLOW",
+                "NET_TCP_SSH_ALLOW"
+            ],
+            "anomaly_score": 3.6924074590206146,
+            "threshold": 0.13211764618754387,
+            "classification": "ANOMALOUS (PRE-ATTACK RECONNAISSANCE)",
+            "early_prediction": {
+                "stage": "PRE_ATTACK_RECONNAISSANCE",
+                "risk_score": 0.86,
+                "early_warning": true,
+                "is_recon_pattern": true,
+                "probed_ports": [
+                    "445/SMB",
+                    "3389/RDP",
+                    "22/SSH"
+                ],
+                "predicted_attack": "SSH_BRUTE_FORCE (AUTH_SSHD_FAILURE)",
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SMB_ALLOW",
+                        0.8496
+                    ],
+                    [
+                        "NET_TCP_RDP_ALLOW",
+                        0.084
+                    ],
+                    [
+                        "NET_TCP_SSH_ALLOW",
+                        0.0524
+                    ]
+                ],
+                "summary": "PREDICTED ATTACK BEFORE OCCURRENCE: Pre-attack reconnaissance detected across 445/SMB, 3389/RDP, 22/SSH. Imminent SSH brute-force attack predicted!"
+            }
+        },
+        {
+            "sequence_id": 7,
+            "source": "10.10.1.10",
+            "sequence_type": "attack_session",
+            "event_ids": [
+                6,
+                6,
+                5,
+                7,
+                2,
+                2,
+                2,
+                2,
+                3
+            ],
+            "events": [
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_SMB_ALLOW",
+                "NET_TCP_RDP_ALLOW",
+                "NET_TCP_SSH_ALLOW",
+                "AUTH_SSHD_FAILURE",
+                "AUTH_SSHD_FAILURE",
+                "AUTH_SSHD_FAILURE",
+                "AUTH_SSHD_FAILURE",
+                "AUTH_SSHD_SUCCESS"
+            ],
+            "anomaly_score": 6.284107671843635,
+            "threshold": 0.13211764618754387,
+            "classification": "ANOMALOUS (SYSTEM COMPROMISE)",
+            "early_prediction": {
+                "stage": "SYSTEM_COMPROMISE",
+                "risk_score": 0.98,
+                "early_warning": false,
+                "is_recon_pattern": false,
+                "probed_ports": [
+                    "445/SMB",
+                    "3389/RDP",
+                    "22/SSH"
+                ],
+                "predicted_attack": "COMPROMISED: Attacker breached server after brute-forcing credentials.",
+                "top_next_token_predictions": [
+                    [
+                        "NET_TCP_SSH_ALLOW",
+                        0.9401
+                    ],
+                    [
+                        "NET_TCP_HTTPS_ALLOW",
+                        0.0404
+                    ],
+                    [
+                        "AUTH_SSHD_SUCCESS",
+                        0.0106
+                    ]
+                ],
+                "summary": "CRITICAL BREACH: Unauthorized access achieved following brute force attack."
+            }
+        }
+    ]
+}

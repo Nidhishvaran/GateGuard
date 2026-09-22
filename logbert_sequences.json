@@ -1,0 +1,162 @@
+[
+  {
+    "sequence_id": 0,
+    "source": "192.168.1.10",
+    "sequence_type": "full_session",
+    "start_time": 1790067601000,
+    "end_time": 1790067610000,
+    "length": 4,
+    "event_ids": [
+      6,
+      7,
+      3,
+      6
+    ],
+    "events": [
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_SSH_ALLOW",
+      "AUTH_SSHD_SUCCESS",
+      "NET_TCP_SMB_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 1,
+    "source": "192.168.1.11",
+    "sequence_type": "full_session",
+    "start_time": 1790067901000,
+    "end_time": 1790067904000,
+    "length": 3,
+    "event_ids": [
+      6,
+      5,
+      7
+    ],
+    "events": [
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_RDP_ALLOW",
+      "NET_TCP_SSH_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 2,
+    "source": "192.168.1.12",
+    "sequence_type": "full_session",
+    "start_time": 1790068201000,
+    "end_time": 1790068206000,
+    "length": 4,
+    "event_ids": [
+      7,
+      3,
+      4,
+      6
+    ],
+    "events": [
+      "NET_TCP_SSH_ALLOW",
+      "AUTH_SSHD_SUCCESS",
+      "NET_TCP_HTTPS_ALLOW",
+      "NET_TCP_SMB_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 3,
+    "source": "192.168.1.13",
+    "sequence_type": "attack_session",
+    "start_time": 1790068501000,
+    "end_time": 1790068504000,
+    "length": 4,
+    "event_ids": [
+      7,
+      2,
+      3,
+      6
+    ],
+    "events": [
+      "NET_TCP_SSH_ALLOW",
+      "AUTH_SSHD_FAILURE",
+      "AUTH_SSHD_SUCCESS",
+      "NET_TCP_SMB_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 4,
+    "source": "192.168.1.14",
+    "sequence_type": "full_session",
+    "start_time": 1790068801000,
+    "end_time": 1790068802000,
+    "length": 2,
+    "event_ids": [
+      6,
+      4
+    ],
+    "events": [
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_HTTPS_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 5,
+    "source": "192.168.1.15",
+    "sequence_type": "full_session",
+    "start_time": 1790069101000,
+    "end_time": 1790069103000,
+    "length": 2,
+    "event_ids": [
+      5,
+      6
+    ],
+    "events": [
+      "NET_TCP_RDP_ALLOW",
+      "NET_TCP_SMB_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 6,
+    "source": "10.10.1.10",
+    "sequence_type": "pre_attack_precursor",
+    "start_time": 1790071201000,
+    "end_time": 1790071204000,
+    "length": 4,
+    "event_ids": [
+      6,
+      6,
+      5,
+      7
+    ],
+    "events": [
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_RDP_ALLOW",
+      "NET_TCP_SSH_ALLOW"
+    ]
+  },
+  {
+    "sequence_id": 7,
+    "source": "10.10.1.10",
+    "sequence_type": "attack_session",
+    "start_time": 1790071201000,
+    "end_time": 1790071209000,
+    "length": 9,
+    "event_ids": [
+      6,
+      6,
+      5,
+      7,
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "events": [
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_SMB_ALLOW",
+      "NET_TCP_RDP_ALLOW",
+      "NET_TCP_SSH_ALLOW",
+      "AUTH_SSHD_FAILURE",
+      "AUTH_SSHD_FAILURE",
+      "AUTH_SSHD_FAILURE",
+      "AUTH_SSHD_FAILURE",
+      "AUTH_SSHD_SUCCESS"
+    ]
+  }
+]

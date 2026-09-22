@@ -1,0 +1,10 @@
+{
+  "<PAD>": 0,
+  "<UNK>": 1,
+  "AUTH_SSHD_FAILURE": 2,
+  "AUTH_SSHD_SUCCESS": 3,
+  "NET_TCP_HTTPS_ALLOW": 4,
+  "NET_TCP_RDP_ALLOW": 5,
+  "NET_TCP_SMB_ALLOW": 6,
+  "NET_TCP_SSH_ALLOW": 7
+}

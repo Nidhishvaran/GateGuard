@@ -1,0 +1,312 @@
+[
+  {
+    "timestamp": 1790067601000,
+    "source": "192.168.1.10",
+    "destination": "192.168.1.20",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790067602000,
+    "source": "192.168.1.10",
+    "destination": "192.168.1.20",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SSH_ALLOW",
+    "event_id": 1756809,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790067603000,
+    "source": "192.168.1.10",
+    "destination": "192.168.1.20",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790067610000,
+    "source": "192.168.1.10",
+    "destination": "192.168.1.20",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790067901000,
+    "source": "192.168.1.11",
+    "destination": "192.168.1.21",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790067902000,
+    "source": "192.168.1.11",
+    "destination": "192.168.1.21",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_RDP_ALLOW",
+    "event_id": 3568382714,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790067903000,
+    "source": "192.168.1.21",
+    "destination": "192.168.1.21",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790067904000,
+    "source": "192.168.1.11",
+    "destination": "192.168.1.21",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SSH_ALLOW",
+    "event_id": 1756809,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068201000,
+    "source": "192.168.1.12",
+    "destination": "192.168.1.22",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SSH_ALLOW",
+    "event_id": 1756809,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068202000,
+    "source": "192.168.1.12",
+    "destination": "192.168.1.22",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790068205000,
+    "source": "192.168.1.12",
+    "destination": "192.168.1.22",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_HTTPS_ALLOW",
+    "event_id": 3112505826,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068206000,
+    "source": "192.168.1.12",
+    "destination": "192.168.1.22",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068501000,
+    "source": "192.168.1.13",
+    "destination": "192.168.1.23",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SSH_ALLOW",
+    "event_id": 1756809,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068502000,
+    "source": "192.168.1.13",
+    "destination": "192.168.1.23",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_FAILURE",
+    "event_id": 3736713356,
+    "severity": 3,
+    "action": "FAILURE"
+  },
+  {
+    "timestamp": 1790068503000,
+    "source": "192.168.1.13",
+    "destination": "192.168.1.23",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790068504000,
+    "source": "192.168.1.13",
+    "destination": "192.168.1.23",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068801000,
+    "source": "192.168.1.14",
+    "destination": "192.168.1.24",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068802000,
+    "source": "192.168.1.14",
+    "destination": "192.168.1.24",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_HTTPS_ALLOW",
+    "event_id": 3112505826,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790068803000,
+    "source": "192.168.1.24",
+    "destination": "192.168.1.24",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790069101000,
+    "source": "192.168.1.15",
+    "destination": "192.168.1.25",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_RDP_ALLOW",
+    "event_id": 3568382714,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790069102000,
+    "source": "192.168.1.25",
+    "destination": "192.168.1.25",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  },
+  {
+    "timestamp": 1790069103000,
+    "source": "192.168.1.15",
+    "destination": "192.168.1.25",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790071201000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790071202000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SMB_ALLOW",
+    "event_id": 2693383274,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790071203000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_RDP_ALLOW",
+    "event_id": 3568382714,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790071204000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 4001,
+    "event_template": "NET_TCP_SSH_ALLOW",
+    "event_id": 1756809,
+    "severity": 1,
+    "action": "ALLOW"
+  },
+  {
+    "timestamp": 1790071205000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_FAILURE",
+    "event_id": 3736713356,
+    "severity": 3,
+    "action": "FAILURE"
+  },
+  {
+    "timestamp": 1790071206000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_FAILURE",
+    "event_id": 3736713356,
+    "severity": 3,
+    "action": "FAILURE"
+  },
+  {
+    "timestamp": 1790071207000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_FAILURE",
+    "event_id": 3736713356,
+    "severity": 3,
+    "action": "FAILURE"
+  },
+  {
+    "timestamp": 1790071208000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_FAILURE",
+    "event_id": 3736713356,
+    "severity": 3,
+    "action": "FAILURE"
+  },
+  {
+    "timestamp": 1790071209000,
+    "source": "10.10.1.10",
+    "destination": "10.10.1.50",
+    "class_uid": 3002,
+    "event_template": "AUTH_SSHD_SUCCESS",
+    "event_id": 1501114183,
+    "severity": 1,
+    "action": "SUCCESS"
+  }
+]
